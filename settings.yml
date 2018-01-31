@@ -23,7 +23,7 @@ triggers:
 # ---------------------------
 
 # This is the STT that will be used by default
-default_speech_to_text: "google"
+default_speech_to_text: "cmusphinx"
 
 # Speech to text options
 #recognition_options:
@@ -39,6 +39,8 @@ default_speech_to_text: "google"
 # - houndify
 # - cmusphinx (must be installed first)
 speech_to_text:
+  - cmusphinx:
+      language: "en-EN"
   - google:
       language: "en-EN"
 
